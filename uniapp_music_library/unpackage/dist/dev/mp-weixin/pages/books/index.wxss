@@ -1,0 +1,59 @@
+@import "../../common/vendor.wxss";
+
+.text-primary.data-v-0476657c {
+  color: #EA5149;
+}
+.book-card.data-v-0476657c {
+  padding: 5px;
+  overflow: hidden;
+  margin: 5px 0;
+  font-size: 14px;
+}
+.book-card .thumb.data-v-0476657c {
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.book-card .thumb .image.data-v-0476657c {
+  max-width: 100%;
+  max-height: 100%;
+}
+.book-card .detail.data-v-0476657c {
+  margin-left: 100px;
+}
+.book-card .detail .row.data-v-0476657c {
+  line-height: 20px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+.book-card .detail .left.data-v-0476657c {
+  float: left;
+}
+.book-card .detail .right.data-v-0476657c {
+  float: right;
+}
+.book-card .detail .author.data-v-0476657c {
+  width: 80%;
+}
+.book-card .detail .bookname.data-v-0476657c {
+  max-width: 65%;
+}
+.book-card .detail .count.data-v-0476657c {
+  padding: 3px;
+  border-radius: 50%;
+  background: #71ef39;
+  color: #ffffff;
+}
+.book-card .detail .user.data-v-0476657c {
+  text-shadow: 0 0 10px #666;
+}
+.swiper-div.data-v-6cd98186 {
+  width: 100%;
+  margin-top: 5px;
+}
+.swiper-div ._img.slide-image.data-v-6cd98186 {
+  width: 33%;
+  height: 250rpx;
+}

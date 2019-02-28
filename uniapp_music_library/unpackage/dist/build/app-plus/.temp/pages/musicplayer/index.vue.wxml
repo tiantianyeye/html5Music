@@ -1,0 +1,31 @@
+<template name="0506c950">
+  <view class="_div data-v-1739ef05 musicplayer-div">
+    <image class="_image data-v-1739ef05 bgImg" src="{{musicDetailInfo.img}}"></image>
+    <view class="_div data-v-1739ef05 music-div">
+      <view class="_div data-v-1739ef05 geci-div">
+        <view class="_div data-v-1739ef05 pos-div" style=" {{('top:' + (topDistance + 'px') + ';')}}">
+          <view wx:key="key" key="{{key}}" wx:for="{{lyricsArr.lyricsList}}" wx:for-index="i" wx:for-item="item" class="_p data-v-1739ef05 {{[  (i < lyricsArr.lyricsList.length - 1  ? currentTime > 3000 &&    currentTime >= lyricsArr.timeArrs[i] &&    currentTime <= lyricsArr.timeArrs[i + 1]  : currentTime > lyricsArr.timeArrs[i])    ? 'active'    : '']}}">
+          {{item}} </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-1739ef05 controls-group-div">
+      <view class="_div data-v-1739ef05 progress-div">
+        <label class="_span data-v-1739ef05">{{dealCurrentTime}}</label>
+        <progress percent="{{currentPrecent}}" stroke-width="5" backgroundColor="#dcdcdc" activeColor="#3195fd" class="_progress data-v-1739ef05" />
+        <label class="_span data-v-1739ef05">{{dealTotalTime}}</label>
+      </view>
+      <view class="_div data-v-1739ef05 control-div">
+        <view class="_div data-v-1739ef05 space"></view>
+        <view class="_div data-v-1739ef05 control-btn">
+          <view class="_i data-v-1739ef05 iconfont icon-kuaijin-copy" catchtap="handleProxy" data-eventid="{{'vGF-0'}}" data-comkey="{{$k}}"></view>
+          <view class="_i data-v-1739ef05 iconfont icon-shangyishou" catchtap="handleProxy" data-eventid="{{'o0P-1'}}" data-comkey="{{$k}}"></view>
+          <view class="_i data-v-1739ef05 iconfont icon-Icon-pause {{[isPlaying ? 'icon-Icon-pause' : 'icon-zanting']}}" catchtap="handleProxy" data-eventid="{{'Snl-2'}}" data-comkey="{{$k}}"></view>
+          <view class="_i data-v-1739ef05 iconfont icon-kuaijin1" catchtap="handleProxy" data-eventid="{{'uav-3'}}" data-comkey="{{$k}}"></view>
+          <view class="_i data-v-1739ef05 iconfont icon-kuaijin" catchtap="handleProxy" data-eventid="{{'lQ0-4'}}" data-comkey="{{$k}}"></view>
+        </view>
+        <view class="_i data-v-1739ef05 iconfont icon-xiazai download" catchtap="handleProxy" data-eventid="{{'gsq-5'}}" data-comkey="{{$k}}"></view>
+      </view>
+    </view>
+  </view>
+</template>

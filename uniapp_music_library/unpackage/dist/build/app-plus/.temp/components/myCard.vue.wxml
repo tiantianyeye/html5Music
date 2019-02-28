@@ -1,0 +1,25 @@
+<import src="/components/myRate.vue.wxml" />
+<template name="1fd68b0e">
+  <navigator url="{{detailUrl}}" class="_a data-v-0476657c">
+    <view class="_div data-v-0476657c book-card">
+      <view class="_div data-v-0476657c thumb">
+        <image src="{{book.imgUrl}}" class="_img data-v-0476657c image" alt mode="aspectFit" catchtap="handleProxy" data-eventid="{{'WeM-0'}}" data-comkey="{{$k}}"></image>
+      </view>
+      <view class="_div data-v-0476657c detail">
+        <view class="_div data-v-0476657c row text-primary">
+          <view class="_div data-v-0476657c right">
+            <template data="{{...$root['0'], ...$root[$kk+'m6X-0'],$root}}" is="397ff4de"></template>{{book.rate}} </view>
+          <view class="_div data-v-0476657c left bookname"> {{book.bookname}} </view>
+        </view>
+        <view class="_div data-v-0476657c row">
+          <view class="_div data-v-0476657c right count"> {{book.count}} </view>
+          <view class="_div data-v-0476657c left author"> {{book.author}} </view>
+        </view>
+        <view class="_div data-v-0476657c row">
+          <view class="_div data-v-0476657c right user"> {{book.uploadPersonName}} </view>
+          <view class="_div data-v-0476657c left"> {{book.publisher}} </view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</template>

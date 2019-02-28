@@ -1,0 +1,16 @@
+<import src="/components/YearProgress.vue.wxml" />
+<template name="480007aa">
+  <view class="_div data-v-0f5c5fe2 container">
+    <view class="_div data-v-0f5c5fe2 userinfo">
+      <image src="{{userInfo.avatarUrl}}" alt class="_img data-v-0f5c5fe2"></image>
+      <view class="_p data-v-0f5c5fe2 nickname" wx:if="{{userInfo.nickName}}">{{userInfo.nickName}}</view>
+      <button class="_button data-v-0f5c5fe2 login-btn" wx:else open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'LHv-0'}}" data-comkey="{{$k}}">点击登陆</button>
+    </view>
+    <template data="{{...$root['0'], ...$root[$kk+'9PG-0'],$root}}" is="00d3075c"></template>
+    <button class="_button data-v-0f5c5fe2 btn" bindtap="handleProxy" hidden="{{!(userInfo.nickName)}}" data-eventid="{{'NQG-1'}}" data-comkey="{{$k}}">添加图书</button>
+    <view class="_div data-v-0f5c5fe2 reward-div">
+      <image src="{{rewardImg}}" data-src="{{rewardImg}}" bindtap="handleProxy" data-eventid="{{'YRF-2'}}" data-comkey="{{$k}}" class="_image data-v-0f5c5fe2"></image>
+      <view class="_p data-v-0f5c5fe2">点击预览图片，长按图片扫一扫</view>
+    </view>
+  </view>
+</template>

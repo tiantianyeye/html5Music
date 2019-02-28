@@ -1,0 +1,43 @@
+<import src="/components/myRate.vue.wxml" />
+<template name="42d045ba">
+  <view class="_div data-v-6d2f0cf0 detail-div">
+    <view class="_div data-v-6d2f0cf0 thumb">
+      <image class="_img data-v-6d2f0cf0 back" src="{{info.imgUrl}}" alt mode="aspectFill"></image>
+      <view class="_div data-v-6d2f0cf0 front-div">
+        <image class="_img data-v-6d2f0cf0 small-img" src="{{info.imgUrl}}" alt mode="aspectFit"></image>
+        <view class="_p data-v-6d2f0cf0 bookname">{{info.bookname}}</view>
+        <view class="_p data-v-6d2f0cf0 author">{{info.author}}</view>
+      </view>
+    </view>
+    <view class="_div data-v-6d2f0cf0 owner">
+      <view class="_div data-v-6d2f0cf0 left person-div">
+        <image src="{{info.avatar}}" mode="aspectFit" class="_img data-v-6d2f0cf0"></image>
+        <label class="_span data-v-6d2f0cf0 nickname">{{info.uploadPersonName}}</label>
+      </view>
+      <label class="_span data-v-6d2f0cf0 right"> {{info.rate}}分
+        <template data="{{...$root['0'], ...$root[$kk+'RF5-0'],$root}}" is="397ff4de"></template>
+      </label>
+      <view class="_div data-v-6d2f0cf0 publish-info clear">
+        <label class="_span data-v-6d2f0cf0">{{info.publisher}}</label>
+        <label class="_span data-v-6d2f0cf0 right">{{info.price}}元</label>
+      </view>
+      <view class="_div data-v-6d2f0cf0 tags-info clear">
+        <label wx:key="key" key="{{key}}" class="_span data-v-6d2f0cf0 badge" wx:for="{{info.tags}}" wx:for-index="key" wx:for-item="tag"> {{tag}} </label>
+      </view>
+      <view class="_div data-v-6d2f0cf0 summary clear">
+        <view wx:key="key" key="{{key}}" wx:for="{{info.summary}}" wx:for-index="key" wx:for-item="text" class="_p data-v-6d2f0cf0"> {{text}} </view>
+      </view>
+    </view>
+    <view class="_div data-v-6d2f0cf0 comment">
+      <textarea value="{{comment}}" bindinput="handleProxy" class="_textarea data-v-6d2f0cf0 textarea" maxlength="100" placeholder="sorry个人开发者，不允许评论模块。" disabled="true" data-eventid="{{'rLt-0'}}" data-comkey="{{$k}}" />
+      <view class="_div data-v-6d2f0cf0 phone"> 手机型号：
+        <label class="_span data-v-6d2f0cf0 text-primary">{{phoneMode}}</label>
+      </view>
+      <view class="_div data-v-6d2f0cf0 location"> 地理位置：
+        <switch class="_switch data-v-6d2f0cf0 right" color="#EA5A49" bindtap="handleProxy" data-eventid="{{'XgW-1'}}" data-comkey="{{$k}}" />
+        <label class="_span data-v-6d2f0cf0 text-primary">{{location}}</label>
+      </view>
+    </view>
+    <button open-type="share" class="_button data-v-6d2f0cf0 btn">转发给好友</button>
+  </view>
+</template>

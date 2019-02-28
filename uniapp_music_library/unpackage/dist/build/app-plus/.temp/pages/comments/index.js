@@ -1,0 +1,3 @@
+require("../../common/manifest.js");
+require("../../common/vendor.js");
+global.webpackJsonp([7],{57:function(t,e,n){"use strict";var u=a(n(2)),s=a(n(58));function a(t){return t&&t.__esModule?t:{default:t}}Page((0,u.default)(s.default))},58:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var u=n(60),s=n.n(u),a=n(61);var i=function(t){n(59)},r=n(0)(s.a,a.a,i,null,null);e.default=r.exports},59:function(t,e){},60:function(t,e,n){"use strict"},61:function(t,e,n){"use strict";var u={render:function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"book-div"},[this._v("\n    评论\n")])},staticRenderFns:[]};e.a=u}},[57]);

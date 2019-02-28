@@ -1,0 +1,66 @@
+<import src="/components/myNoMore.vue.wxml" />
+<template name="e633ff22">
+  <view class="_div data-v-062c6424 music-container">
+    <view class="_div data-v-062c6424 header-div">
+      <view class="_div data-v-062c6424 header-top1">
+        <view class="_div data-v-062c6424 top-left">
+          <label class="_span data-v-062c6424 text1">M</label>
+          <label class="_span data-v-062c6424 text2">我的音乐</label>
+        </view>
+        <view class="_div data-v-062c6424 top-right">
+          <input type="text" placeholder="歌手/歌名" value="{{keyword}}" bindinput="handleProxy" placeholder-style="color:#e5e5e5;" bindconfirm="handleProxy" data-eventid="{{'Rvy-0'}}" data-comkey="{{$k}}" class="_input data-v-062c6424" />
+          <view class="_i data-v-062c6424 iconfont icon-sousuo" bindtap="handleProxy" data-eventid="{{'CKG-1'}}" data-comkey="{{$k}}"></view>
+          <view class="_div data-v-062c6424 tip-div" hidden="{{!(showSeahchDiv)}}">
+            <view class="_ul data-v-062c6424">
+              <view wx:key="key" key="{{key}}" bindtap="handleProxy" data-eventid="{{'82n-2-'+i}}" data-comkey="{{$k}}" wx:for="{{searchTipList}}" wx:for-index="i" wx:for-item="item" class="_li data-v-062c6424"> {{item.HintInfo}} </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-062c6424 header-top2">
+        <swiper circular="true" indicator-dots="true" autoplay="true" interval="3000" duration="500" indicator-color="#2ca2f9" indicator-active-color="#d1c90e" class="_swiper data-v-062c6424">
+          <swiper-item wx:key="key" key="{{key}}" wx:for="{{swiperImgs}}" wx:for-index="index" wx:for-item="img" class="_swiper-item data-v-062c6424">
+            <view class="_view data-v-062c6424 swiper-item">
+              <image src="{{img}}" mode="scaleToFill" class="_image data-v-062c6424"></image>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+    <view class="_div data-v-062c6424 space-div"></view>
+    <view class="_div data-v-062c6424 music-div" hidden="{{!(songList && songList.length>0)}}">
+      <view class="_ul data-v-062c6424">
+        <view wx:key="key" key="{{key}}" catchtap="handleProxy" data-eventid="{{'HKv-3-'+i}}" data-comkey="{{$k}}" wx:for="{{songList}}" wx:for-index="i" wx:for-item="item" class="_li data-v-062c6424">
+          <view class="_div data-v-062c6424 text">
+            <view class="_p data-v-062c6424">{{item.SongName}}</view>
+            <view class="_p data-v-062c6424 singer">{{item.SingerName}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-062c6424 music-div" hidden="{{!(songList.length==0)}}">
+      <view class="_ul data-v-062c6424">
+        <view wx:key="key" key="{{key}}" catchtap="handleProxy" data-eventid="{{'FQU-4-'+i}}" data-comkey="{{$k}}" wx:for="{{recommendMusic}}" wx:for-index="i" wx:for-item="item" class="_li data-v-062c6424">
+          <view class="_div data-v-062c6424 text">
+            <view class="_p data-v-062c6424">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-062c6424 play-div" wx:if="{{playDivShow}}" bindtap="handleProxy" data-eventid="{{'INk-8'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-062c6424 img-div {{[isPlaying ? 'run' : '']}}">
+        <image src="{{musicDetailInfo.img}}" class="_image data-v-062c6424"></image>
+      </view>
+      <view class="_div data-v-062c6424 music-info">
+        <view class="_p data-v-062c6424">{{musicDetailInfo.song_name}}</view>
+        <view class="_p data-v-062c6424 singer">{{musicDetailInfo.author_name}}</view>
+      </view>
+      <view class="_div data-v-062c6424 play-components">
+        <view class="_i data-v-062c6424 iconfont icon-kuaijin-copy prev" catchtap="handleProxy" data-eventid="{{'59s-5'}}" data-comkey="{{$k}}"></view>
+        <view class="_i data-v-062c6424 iconfont lay {{[isPlaying ? 'icon-Icon-pause' : 'icon-zanting']}}" catchtap="handleProxy" data-eventid="{{'8H2-6'}}" data-comkey="{{$k}}"></view>
+        <view class="_i data-v-062c6424 iconfont icon-kuaijin next" catchtap="handleProxy" data-eventid="{{'JJF-7'}}" data-comkey="{{$k}}"></view>
+      </view>
+    </view>
+    <template data="{{...$root['0'], ...$root[$kk+'yTH-1'],$root}}" is="56cdff98"></template>
+  </view>
+</template>

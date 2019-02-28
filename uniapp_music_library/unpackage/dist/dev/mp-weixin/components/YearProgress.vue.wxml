@@ -1,0 +1,6 @@
+<template name="00d3075c">
+  <view class="_div data-v-7b94d74a progressbar">
+    <progress percent="{{progressData}}" stroke-width="8" show-info activeColor="#EA5A49" backgroundColor="#333" active="true" class="_progress data-v-7b94d74a" />
+    <view class="_p data-v-7b94d74a tip">{{year}}年已经过去的{{days}}天</view>
+  </view>
+</template>

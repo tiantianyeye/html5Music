@@ -1,0 +1,10 @@
+<import src="/components/topSwiper.vue.wxml" />
+<import src="/components/myCard.vue.wxml" />
+<import src="/components/myNoMore.vue.wxml" />
+<template name="08e812b4">
+  <view class="_div data-v-fba3132e book-div">
+    <template data="{{...$root['0'], ...$root[$kk+'4NX-0'],$root}}" is="f9714f2a"></template>
+    <template wx:key="key" data="{{...$root['0'], ...$root[$kk+'fhv-1-'+key],$root}}" is="1fd68b0e" wx:for="{{books}}" wx:for-index="key" wx:for-item="item"></template>
+    <template data="{{...$root['0'], ...$root[$kk+'nv1-2'],$root}}" is="56cdff98"></template>
+  </view>
+</template>

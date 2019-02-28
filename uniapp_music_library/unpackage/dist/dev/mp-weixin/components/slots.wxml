@@ -1,0 +1,6 @@
+<import src="/components/myNoMore.vue.wxml" />
+<import src="/components/YearProgress.vue.wxml" />
+<import src="/components/topSwiper.vue.wxml" />
+<import src="/components/myCard.vue.wxml" />
+<import src="/components/myNoMore.vue.wxml" />
+<import src="/components/myRate.vue.wxml" />

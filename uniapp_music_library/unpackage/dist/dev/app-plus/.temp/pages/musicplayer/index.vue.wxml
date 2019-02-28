@@ -1,0 +1,29 @@
+<template name="4d95fe00">
+  <view class="_div data-v-02597a59 musicplayer-div">
+    <image class="_image data-v-02597a59 bgImg" src="{{musicDetailInfo.img}}"></image>
+    <view class="_div data-v-02597a59 music-div">
+      <view class="_div data-v-02597a59 geci-div">
+        <view class="_div data-v-02597a59 pos-div" style=" {{('top:' + (topDistance + 'px') + ';')}}">
+          <view wx:key="key" key="{{key}}" wx:for="{{lyricsArr.lyricsList}}" wx:for-index="i" wx:for-item="item" class="_p data-v-02597a59 {{[  (i < lyricsArr.lyricsList.length - 1  ? computeCurrentSecond > 3 &&    computeCurrentSecond >= lyricsArr.timeArrs[i] &&    computeCurrentSecond <= lyricsArr.timeArrs[i + 1]  : computeCurrentSecond > lyricsArr.timeArrs[i])    ? 'active'    : '']}}">
+          {{item}} </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-02597a59 controls-group-div">
+      <view class="_div data-v-02597a59 progress-div">
+        <label class="_span data-v-02597a59">{{dealCurrentTime}}</label>
+        <progress percent="{{currentPrecent}}" stroke-width="5" backgroundColor="#dcdcdc" activeColor="#3195fd" class="_progress data-v-02597a59" />
+        <label class="_span data-v-02597a59">{{dealTotalTime}}</label>
+      </view>
+      <view class="_div data-v-02597a59 control-div">
+        <view class="_div data-v-02597a59 space"></view>
+        <view class="_div data-v-02597a59 control-btn">
+          <view class="_i data-v-02597a59 iconfont icon-kuaijin-copy" catchtap="handleProxy" data-eventid="{{'CWc-0'}}" data-comkey="{{$k}}"></view>
+          <view class="_i data-v-02597a59 iconfont icon-Icon-pause {{[isPlaying ? 'icon-Icon-pause' : 'icon-zanting']}}" catchtap="handleProxy" data-eventid="{{'wyx-1'}}" data-comkey="{{$k}}"></view>
+          <view class="_i data-v-02597a59 iconfont icon-kuaijin" catchtap="handleProxy" data-eventid="{{'1oJ-2'}}" data-comkey="{{$k}}"></view>
+        </view>
+        <view class="_i data-v-02597a59 iconfont icon-xiazai download" catchtap="handleProxy" data-eventid="{{'0xg-3'}}" data-comkey="{{$k}}"></view>
+      </view>
+    </view>
+  </view>
+</template>

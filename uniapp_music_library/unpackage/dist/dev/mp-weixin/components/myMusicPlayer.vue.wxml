@@ -1,0 +1,15 @@
+<template name="5cc0a1b0">
+  <view class="_div data-v-7650fdd6 musicplayer-div" hidden="{{!(isShow)}}">
+    <image class="_image data-v-7650fdd6 bgImg" src="{{musicDetailInfo.img}}"></image>
+    <view class="_div data-v-7650fdd6 music-div">
+      <view class="_p data-v-7650fdd6 audio_name">
+        <view class="_i data-v-7650fdd6 iconfont icon-fanhui" bindtap="handleProxy" data-eventid="{{'fMX-0'}}" data-comkey="{{$k}}"></view>
+        <label class="_span data-v-7650fdd6">周杰伦-告白气球</label>
+      </view>
+      <view class="_div data-v-7650fdd6 geci-div"></view>
+      <view class="_div data-v-7650fdd6 controls-group-div">
+        <progress percent="{{precent}}" stroke-width="2" backgroundColor="#dcdcdc" activeColor="#3195fd" class="_progress data-v-7650fdd6" />
+      </view>
+    </view>
+  </view>
+</template>

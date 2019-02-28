@@ -1,0 +1,11 @@
+<template name="7e1f209f">
+  <view class="_div data-v-610c9af1 swiper-div">
+    <swiper indicator-dots="true" indicator-color="#EA5A49" autoplay="true" interval="5000" duration="600" circular="true" class="_swiper data-v-610c9af1">
+      <block wx:key="key" key="{{key}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item">
+        <swiper-item class="_swiper-item data-v-610c9af1">
+          <image class="_img data-v-610c9af1 slide-image" mode="aspectFit" wx:key="key1" key="{{key1}}" src="{{image.imgUrl}}" bindtap="handleProxy" data-eventid="{{'pSD-0-'+index+'-'+i}}" data-comkey="{{$k}}" wx:for="{{item}}" wx:for-index="i" wx:for-item="image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</template>

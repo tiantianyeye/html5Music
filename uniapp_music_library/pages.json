@@ -1,0 +1,82 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/music/index",
+			"style": {
+				"navigationBarTitleText": "音乐",
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": true
+			}
+		},{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "个人名片"
+			}
+		},{
+			"path": "pages/musicplayer/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},{
+			"path": "pages/books/index",
+			"style": {
+				"navigationBarTitleText": "中科华标书库",
+				"backgroundColor": "#999999",
+				"onReachBottomDistance": 50,
+				"enablePullDownRefresh": true
+			}
+		},{
+			"path": "pages/comments/index",
+			"style": {}
+		},{
+			"path": "pages/detail/index",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "我的音乐",
+		"navigationBarBackgroundColor": "#1AA034",
+		"backgroundColor": "#1AA034"
+	},
+	"tabBar": {  //底部选项卡
+		"color": "#333333",
+		"selectedColor":"#1AA034",
+		"borderStyle":"black",
+		"list": [  //tab选项
+			{
+				"text": "音乐",
+				"pagePath":"pages/music/index",
+				"iconPath": "static/img/music.png",
+				"selectedIconPath": "static/img/music_hl.png"
+			},{
+				"text": "图书",
+				"pagePath": "pages/books/index",
+				"iconPath": "static/img/book.png",
+				"selectedIconPath": "static/img/book-active.png"
+			},{
+				"text": "个人中心",
+				"pagePath":"pages/me/index",
+				"iconPath": "static/img/yuedu.png",
+				"selectedIconPath": "static/img/yuedu_hl.png"
+			}
+		]
+	},
+	"condition":{  //模式配置，仅在开发期间生效
+		"current": 0,  //当前激活的模式(list的索引项)
+		"list": [
+			{
+				"name": "音乐",  //模式名称
+				"path": "pages/music/index"//启动页面，必选
+				//"query": "shop_id=1"  //启动参数，在页面的onLoad函数里面得到
+			},{
+				"name": "个人名片",  //模式名称
+				"path": "pages/me/index",  //启动页面，必选
+				"query": "a=1&b=2"  //启动参数，在页面的onLoad函数里面得到
+			},{
+				"name": "音乐播放器",  //模式名称
+				"path": "pages/musicplayer/index",  //启动页面，必选
+				"query": "index=0"  //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
